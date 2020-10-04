@@ -1,0 +1,35 @@
+html {
+    background-color: black;
+    height: 100%;
+}
+#container {
+    height: 325px;
+    width: 350px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px;
+    grid-template-areas: 
+    ""
+    ""
+    ""
+    ""
+    "";
+    margin: 0 auto;
+    border: 5px solid blue;
+    padding: 25px;
+}
+
+#bill_amount {
+    grid-area: bill-amount;
+}
+#tip_percentage{
+    grid-area: tip-percentage;
+}
+#tip_amount{
+    grid-area: tip-amount;
+}
+#total_bill{
+    grid-area: total-bill;
+}
